@@ -55,15 +55,16 @@ import org.sonar.api.measures.Metric;
 import org.sonar.api.resources.Project;
 import org.sonar.api.rule.RuleKey;
 import org.sonar.api.source.Symbolizable;
-import org.sonar.javascript.visitors.JavaScriptVisitorContext;
 import org.sonar.javascript.checks.CheckList;
 import org.sonar.javascript.checks.ParsingErrorCheck;
 import org.sonar.javascript.highlighter.HighlightSymbolTableBuilder;
 import org.sonar.javascript.highlighter.HighlighterVisitor;
+import org.sonar.javascript.issues.CpdVisitor;
 import org.sonar.javascript.issues.PreciseIssueCompat;
 import org.sonar.javascript.metrics.MetricsVisitor;
 import org.sonar.javascript.parser.JavaScriptParserBuilder;
 import org.sonar.javascript.tree.visitors.CharsetAwareVisitor;
+import org.sonar.javascript.visitors.JavaScriptVisitorContext;
 import org.sonar.plugins.javascript.api.CustomJavaScriptRulesDefinition;
 import org.sonar.plugins.javascript.api.JavaScriptCheck;
 import org.sonar.plugins.javascript.api.symbols.SymbolModel;
@@ -80,6 +81,7 @@ import org.sonar.squidbridge.api.AnalysisException;
 public class JavaScriptSquidSensor implements Sensor {
 
   private static final boolean IS_SONARQUBE_52_OR_LATER = isSonarQube52OrLater();
+  private static final boolean IS_SONARQUBE_55_OR_LATER = isSonarQube55OrLater();
 
   @DependedUpon
   public Collection<Metric> generatesNCLOCMetric() {
@@ -137,6 +139,9 @@ public class JavaScriptSquidSensor implements Sensor {
 
     treeVisitors.add(new MetricsVisitor(fileSystem, context, noSonarFilter, settings.getBoolean(JavaScriptPlugin.IGNORE_HEADER_COMMENTS), fileLinesContextFactory));
     treeVisitors.add(new HighlighterVisitor(resourcePerspectives, fileSystem));
+    if (IS_SONARQUBE_55_OR_LATER) {
+      treeVisitors.add(new CpdVisitor(fileSystem, context));
+    }
     treeVisitors.addAll(checks.all());
 
     for (TreeVisitor check : treeVisitors) {
@@ -300,6 +305,15 @@ public class JavaScriptSquidSensor implements Sensor {
   private static boolean isSonarQube52OrLater() {
     for (Method method : Issuable.IssueBuilder.class.getMethods()) {
       if ("newLocation".equals(method.getName())) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  private static boolean isSonarQube55OrLater() {
+    for (Method method : SensorContext.class.getMethods()) {
+      if ("newCpdTokens".equals(method.getName())) {
         return true;
       }
     }
