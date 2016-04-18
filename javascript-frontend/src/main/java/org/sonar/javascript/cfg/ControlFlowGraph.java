@@ -32,15 +32,15 @@ import org.sonar.plugins.javascript.api.tree.statement.BlockTree;
  *
  * <p>Each node of the graph represents a list of elements which are executed one after the other.
  * Each node has:
+ * </p>
  * <ul>
  * <li>one ore more successor blocks,</li>
  * <li>zero or more predecessor blocks.</li>
  * </ul>
- * </p>
- *
+ * <p>
  * A Control Flow Graph has a single start node and a single end node.
  * The end node has no successor and no element.
- *
+ * </p>
  */
 public class ControlFlowGraph {
 

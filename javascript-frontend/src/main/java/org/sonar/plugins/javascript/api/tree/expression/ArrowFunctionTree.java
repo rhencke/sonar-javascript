@@ -29,12 +29,12 @@ import org.sonar.plugins.javascript.api.tree.statement.BlockTree;
 /**
  * ECMAScript 6 feature
  * <a href="https://people.mozilla.org/~jorendorff/es6-draft.html#sec-arrow-function-definitions">Arrow function</a>.
- * <p/>
- * <p/>
+ * <p></p>
+ * <p></p>
  * <pre>
- *   {@link #parameterClause()} => {@link #body()}
+ *   {@link #parameterClause()} =&gt; {@link #body()}
  * </pre>
- * <p/>
+ * <p></p>
  * <p>This interface is not intended to be implemented by clients.</p>
  */
 @Beta

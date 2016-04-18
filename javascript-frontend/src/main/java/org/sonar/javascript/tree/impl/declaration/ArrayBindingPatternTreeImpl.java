@@ -87,7 +87,7 @@ public class ArrayBindingPatternTreeImpl extends JavaScriptTree implements Array
 
   /**
    * Return the list of new binding names introduced by this array binding pattern.
-   * <p/>
+   * <p></p>
    * Example:
    * <pre>
    *   [a, , , b, ...c] // will return [a, b, c]

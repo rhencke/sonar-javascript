@@ -88,7 +88,7 @@ import static org.sonar.javascript.lexer.JavaScriptTokenType.REGULAR_EXPRESSION_
  * Grammar for ECMAScript.
  * Based on <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMA-262</a>
  * edition 5.1 (June 2011).
- * <p/>
+ * <p></p>
  * Update for support of edition 6 (May 2014)
  * Based on draft <a href="http://people.mozilla.org/~jorendorff/es6-draft.html"></a>
  */

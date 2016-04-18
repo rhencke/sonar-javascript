@@ -538,8 +538,8 @@ public class TreeFactory {
 
   /**
    * Creates a new array literal. Undefined element is added to the array elements list when array element is elided.
-   * <p/>
-   * <p/>
+   * <p></p>
+   * <p></p>
    * From ECMAScript 6 draft:
    * <blockquote>
    * Whenever a comma in the element list is not preceded by an AssignmentExpression i.e., a comma at the beginning

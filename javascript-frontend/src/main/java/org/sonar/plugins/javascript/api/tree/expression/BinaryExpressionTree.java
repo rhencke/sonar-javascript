@@ -25,17 +25,17 @@ import org.sonar.plugins.javascript.api.tree.lexical.SyntaxToken;
 
 /**
  * <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.4">Binary Operator</a>
- * <p/>
- * <p/>
- * <a herf="http://www.ecma-international.org/ecma-262/5.1/#sec-11.6>Additive Operators</a>.
+ * <p></p>
+ * <p></p>
+ * <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.6">Additive Operators</a>.
  * <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.7">Bitwise Shift Operators</a>.
  * <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.8">Relational Operators</a>.
  * <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.9">Equality Operators</a>.
  * <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.10">Binary Bitwise Operators</a>.
  * <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.11">Binary Logical Operators</a>.
  * <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.13">Assignment Operators</a>.
- * <p/>
- * <p/>
+ * <p></p>
+ * <p></p>
  * <pre>
  *   {@link #leftOperand()} {@link Tree.Kind#MULTIPLY *} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#EXPONENT **} {@link #rightOperand()}
@@ -43,21 +43,21 @@ import org.sonar.plugins.javascript.api.tree.lexical.SyntaxToken;
  *   {@link #leftOperand()} {@link Tree.Kind#REMAINDER %} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#PLUS +} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#MINUS -} {@link #rightOperand()}
- *   {@link #leftOperand()} {@link Tree.Kind#LEFT_SHIFT <<} {@link #rightOperand()}
+ *   {@link #leftOperand()} {@link Tree.Kind#LEFT_SHIFT &lt;&lt;} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#RIGHT_SHIFT >>} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#UNSIGNED_RIGHT_SHIFT >>>} {@link #rightOperand()}
- *   {@link #leftOperand()} {@link Tree.Kind#LESS_THAN <} {@link #rightOperand()}
+ *   {@link #leftOperand()} {@link Tree.Kind#LESS_THAN &lt;} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#GREATER_THAN >} {@link #rightOperand()}
- *   {@link #leftOperand()} {@link Tree.Kind#LESS_THAN_OR_EQUAL_TO <=} {@link #rightOperand()}
+ *   {@link #leftOperand()} {@link Tree.Kind#LESS_THAN_OR_EQUAL_TO &lt;=} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#GREATER_THAN_OR_EQUAL_TO >=} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#EQUAL_TO ==} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#STRICT_EQUAL_TO ===} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#NOT_EQUAL_TO !=} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#STRICT_NOT_EQUAL_TO !==} {@link #rightOperand()}
- *   {@link #leftOperand()} {@link Tree.Kind#BITWISE_AND &} {@link #rightOperand()}
+ *   {@link #leftOperand()} {@link Tree.Kind#BITWISE_AND &amp;} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#BITWISE_XOR ^} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#BITWISE_OR |} {@link #rightOperand()}
- *   {@link #leftOperand()} {@link Tree.Kind#CONDITIONAL_AND &&} {@link #rightOperand()}
+ *   {@link #leftOperand()} {@link Tree.Kind#CONDITIONAL_AND &amp;&amp;} {@link #rightOperand()}
  *   {@link #leftOperand()} {@link Tree.Kind#CONDITIONAL_OR ||} {@link #rightOperand()}
  * </pre>
  */

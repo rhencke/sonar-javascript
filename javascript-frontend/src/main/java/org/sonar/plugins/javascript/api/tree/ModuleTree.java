@@ -25,8 +25,8 @@ import org.sonar.plugins.javascript.api.tree.declaration.DeclarationTree;
 
 /**
  * Interface for type <a href="https://people.mozilla.org/~jorendorff/es6-draft.html#sec-modules">Module</a>.
- * <p/>
- * <p/>
+ * <p></p>
+ * <p></p>
  * <p>This interface is not intended to be implemented by clients.</p>
  */
 @Beta

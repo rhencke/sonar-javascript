@@ -29,10 +29,10 @@ import org.sonar.plugins.javascript.api.tree.lexical.SyntaxToken;
  * <pre>
  *   {@link #expression()} {@link Tree.Kind#POSTFIX_INCREMENT ++}
  *   {@link #expression()} {@link Tree.Kind#POSTFIX_DECREMENT --}
- *   {@link Tree.Kind++} {@link #expression()}
  *   {@link Tree.Kind#DELETE delete} {@link #expression()}
  *   {@link Tree.Kind#VOID void} {@link #expression()}
  *   {@link Tree.Kind#TYPEOF typeof} {@link #expression()}
+ *   {@link Tree.Kind#PREFIX_INCREMENT ++} {@link #expression()}
  *   {@link Tree.Kind#PREFIX_DECREMENT --} {@link #expression()}
  *   {@link Tree.Kind#UNARY_PLUS +} {@link #expression()}
  *   {@link Tree.Kind#UNARY_MINUS -} {@link #expression()}

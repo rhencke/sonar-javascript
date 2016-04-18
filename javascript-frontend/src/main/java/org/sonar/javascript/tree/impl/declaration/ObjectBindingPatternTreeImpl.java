@@ -81,7 +81,7 @@ public class ObjectBindingPatternTreeImpl extends JavaScriptTree implements Obje
 
   /**
    * Return the list of new binding names introduced by this object binding pattern.
-   * <p/>
+   * <p></p>
    * Example:
    * <pre>
    *   { f:first, l:last, siblings:{ a, b c} } // will return [first, last, a, b, c]

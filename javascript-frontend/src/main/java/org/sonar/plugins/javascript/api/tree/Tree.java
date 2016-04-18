@@ -817,7 +817,7 @@ public interface Tree {
     EXPORT_LIST(SpecifierListTreeImpl.class),
 
     /**
-     * {@link SpecifierListTreeImpl
+     * {@link SpecifierListTreeImpl}
      */
     IMPORT_LIST(SpecifierListTreeImpl.class),
 

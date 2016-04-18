@@ -26,8 +26,8 @@ import org.sonar.plugins.javascript.api.tree.lexical.SyntaxToken;
 
 /**
  * <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.13">Assignment Expression</a>
- * <p/>
- * <p/>
+ * <p></p>
+ * <p></p>
  * <pre>
  *   {@link #variable()} {@link Tree.Kind#ASSIGNMENT =} {@link #expression()}
  *   {@link #variable()} {@link Tree.Kind#MULTIPLY_ASSIGNMENT *=} {@link #expression()}
@@ -36,10 +36,10 @@ import org.sonar.plugins.javascript.api.tree.lexical.SyntaxToken;
  *   {@link #variable()} {@link Tree.Kind#REMAINDER_ASSIGNMENT %=} {@link #expression()}
  *   {@link #variable()} {@link Tree.Kind#PLUS_ASSIGNMENT +=} {@link #expression()}
  *   {@link #variable()} {@link Tree.Kind#MINUS_ASSIGNMENT -=} {@link #expression()}
- *   {@link #variable()} {@link Tree.Kind#LEFT_SHIFT_ASSIGNMENT <<=} {@link #expression()}
+ *   {@link #variable()} {@link Tree.Kind#LEFT_SHIFT_ASSIGNMENT &lt;&lt;=} {@link #expression()}
  *   {@link #variable()} {@link Tree.Kind#RIGHT_SHIFT_ASSIGNMENT >>=} {@link #expression()}
  *   {@link #variable()} {@link Tree.Kind#UNSIGNED_RIGHT_SHIFT_ASSIGNMENT >>>=} {@link #expression()}
- *   {@link #variable()} {@link Tree.Kind#AND_ASSIGNMENT &=} {@link #expression()}
+ *   {@link #variable()} {@link Tree.Kind#AND_ASSIGNMENT &amp;=} {@link #expression()}
  *   {@link #variable()} {@link Tree.Kind#XOR_ASSIGNMENT ^=} {@link #expression()}
  *   {@link #variable()} {@link Tree.Kind#OR_ASSIGNMENT |=} {@link #expression()}
  * </pre>
